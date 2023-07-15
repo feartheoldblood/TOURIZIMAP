@@ -16,6 +16,7 @@ var marker = L.marker([-12.046374,-77.042793]).addTo(map);
 marker.bindPopup("<b>centro de Lima</b><br>Origen").openPopup();
 var marker2 = L.marker([-12.111062,-77.031591]).addTo(map);
 marker2.bindPopup("<b>MIRAFLORES</b><br>Destino 1").openPopup();
+<<<<<<< HEAD
 L.Routing.control({
   waypoints: [
     L.latLng(-12.046374,-77.042793),
@@ -30,6 +31,8 @@ let stations = JSON.parse(document.getElementById('stations_json').textContent)
 stations.forEach(station => {
     L.marker([station.latitude, station.longitude]).addTo(map)
 });*/
+=======
+>>>>>>> 167b29689d52bd567390caf1e53989dbc901f130
 
 </script>
 {% endblock %}
